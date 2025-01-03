@@ -10,10 +10,11 @@ url: github.com/laerciomatheus
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
+  transition: 0.5s linear;
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .small-text {
@@ -290,7 +291,7 @@ b, strong {
 
 .dark-mode {
   background: #0c0c0df5;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
@@ -305,6 +306,7 @@ b, strong {
 .dark-mode .small-text {
   background: #0d0c15;
   color: #ffffff;
+  transition-delay: 0.5s;
 }
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
@@ -513,7 +515,7 @@ b, strong {
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding: 3px 20px;
+    padding: 3.7px 20px;
   }
 }
 @media (max-width: 580px) {
