@@ -392,6 +392,13 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 525px) {
+  .small-text {
+    display: block;
+  }
+}
+
 .small,
 small {
   font-size: 80%;
@@ -436,6 +443,7 @@ mark {
   max-width: 100%;
   height: auto;
   width: 20rem;
+  border-radius: 30px;
 }
 .img-thumbnail {
   padding: 0.25rem;

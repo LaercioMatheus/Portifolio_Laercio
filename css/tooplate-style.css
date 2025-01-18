@@ -230,6 +230,7 @@ strong {
 }
 
 /*testando as media query*/
+/* Estilos para o menu sanduiche */
 /* Estilos para o modo claro */
 @media (prefers-color-scheme: light) {
   .navbar-toggler .navbar-toggler-icon {
@@ -262,6 +263,8 @@ strong {
   transform: rotate(-45deg);
   bottom: 1px;
 }
+
+/* estilos para o menu sanduiche */
 /*Media query para o modo dark*/
 @media (prefers-color-scheme: dark) {
   .navbar-toggler .navbar-toggler-icon {
@@ -314,6 +317,8 @@ strong {
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #3121c2;
 }
+
+/* menu */
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
   border-bottom: 1px solid #1f1f1f;
@@ -524,7 +529,7 @@ strong {
     padding: 0 2rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   h1 {
     font-size: 2.4em;
   }
@@ -538,11 +543,19 @@ strong {
   }
 
   .navbar-collapse {
-    background: #ffffff;
+    background: inherit; /* Pergando o background do elemento 'pai' */
     text-align: center;
     padding-bottom: 20px;
   }
-  
+
+  /* ARRUMANDO A DIV DO MENU TROCANDO DE COR */
+
+  /* @media (prefers-color-scheme: dark) {
+    .navbar-collapse {
+      background-color: #0c0c0d;
+    }
+  } */
+
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3.7px 20px;
   }
