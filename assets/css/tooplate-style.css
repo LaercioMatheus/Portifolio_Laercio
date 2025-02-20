@@ -6,6 +6,7 @@ url: github.com/laerciomatheus
 */
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
@@ -29,6 +30,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul li {
   list-style: none;
 }
@@ -38,6 +40,7 @@ a {
   text-decoration: none !important;
   transition: all 0.4s ease;
 }
+
 a:hover {
   color: #6554fc !important;
 }
@@ -97,13 +100,16 @@ strong {
   overflow: hidden;
   transition: all 0.4s ease;
 }
+
 .custom-btn:hover {
   color: #3121c2;
 }
+
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
+
 .custom-btn.custom-btn-bg:hover {
   background: #3121c2;
   color: #ffffff !important;
@@ -137,9 +143,11 @@ strong {
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
+
 .animated-item:nth-child(2n + 2) {
   animation-delay: 2s;
 }
+
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
 }
@@ -148,29 +156,36 @@ strong {
   0% {
     opacity: 0;
   }
+
   5% {
     opacity: 0;
     transform: translateY(5px);
   }
+
   10% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   25% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   30% {
     opacity: 0;
     transform: translateY(5px);
   }
+
   80% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .navbar {
   position: fixed;
   top: 0;
@@ -181,12 +196,15 @@ strong {
   will-change: transform;
   transition: transform 200ms linear;
 }
+
 .navbar[class*="-unpinned"] {
   transform: translate(0, -150%);
 }
+
 .navbar[class*="-pinned"] {
   transform: translate(0, 0);
 }
+
 .navbar[class*="headroom--not-top"] {
   background: #ffffff;
   border-bottom: 1px solid #f0f0f0;
@@ -207,11 +225,13 @@ strong {
   font-size: 16px;
   overflow: hidden;
 }
+
 .nav-link span {
   position: relative;
   display: inline-block;
   transition: transform 0.3s;
 }
+
 .nav-link span:before {
   position: absolute;
   top: 100%;
@@ -224,6 +244,7 @@ strong {
   color: #3121c2;
   font-weight: bold;
 }
+
 .navbar-light .navbar-nav .nav-link:focus span,
 .navbar-light .navbar-nav .nav-link:hover span {
   transform: translateY(-100%);
@@ -237,6 +258,7 @@ strong {
     background: #ffffff;
   }
 }
+
 /**/
 
 .navbar-toggler {
@@ -249,16 +271,20 @@ strong {
   cursor: pointer;
   margin-right: 10px;
 }
+
 .navbar-toggler:focus {
   outline: none;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:first-child {
   transform: rotate(45deg);
   top: 6px;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:nth-child(2) {
   display: none;
 }
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:last-child {
   transform: rotate(-45deg);
   bottom: 1px;
@@ -300,6 +326,7 @@ strong {
   font-weight: 300;
   font-style: normal;
 }
+
 .color-mode-icon.active:after {
   font-family: "unicons";
   content: "\eb65";
@@ -311,9 +338,11 @@ strong {
   background: #0c0c0df5;
   transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
+
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }
+
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
   color: #3121c2;
 }
@@ -323,11 +352,13 @@ strong {
   background: #0c0c0d;
   border-bottom: 1px solid #1f1f1f;
 }
+
 .dark-mode .small-text {
   background: #0d0c15;
   color: #ffffff;
   transition-delay: 0.5s;
 }
+
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
 .dark-mode h1,
@@ -339,6 +370,7 @@ strong {
 .dark-mode .color-mode {
   color: #ffffff;
 }
+
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
@@ -349,9 +381,11 @@ strong {
   position: relative;
   padding: 22px 0;
 }
+
 .timeline-wrapper:last-child:before {
   height: 0;
 }
+
 .timeline-wrapper:before {
   content: "";
   background: #474559;
@@ -370,6 +404,7 @@ strong {
   line-height: 75px;
   text-align: center;
 }
+
 .timeline-yr span {
   color: #ffffff;
   font-size: 16px;
@@ -384,6 +419,7 @@ strong {
   max-width: 432px;
   margin-left: 6em;
 }
+
 .timeline-info small {
   color: #474559;
   font-size: 16px;
@@ -396,6 +432,7 @@ strong {
 .owl-carousel .owl-nav span {
   display: none;
 }
+
 .owl-carousel .owl-nav .owl-prev:before,
 .owl-carousel .owl-nav .owl-next:before {
   background: none;
@@ -414,6 +451,7 @@ strong {
   content: "\e833";
   left: -25px;
 }
+
 /* Seta do carrossel para a direita da tela */
 .owl-carousel .owl-nav .owl-next:before {
   content: "\e836";
@@ -427,16 +465,20 @@ strong {
   padding: 0;
   font-size: inherit;
 }
+
 .owl-theme .owl-nav [class*="owl-"]:hover {
   color: #3121c2;
 }
+
 .owl-theme .owl-dots .owl-dot {
   outline: none;
 }
+
 .owl-theme .owl-dots .owl-dot span {
   width: 8px;
   height: 8px;
 }
+
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #5b5b5b;
@@ -449,6 +491,7 @@ strong {
 .contact-form {
   position: relative;
 }
+
 .contact-form .form-control {
   background: transparent;
   border-radius: 2px;
@@ -457,13 +500,16 @@ strong {
   font-weight: bold;
   margin: 16px 0;
 }
+
 .contact-form .form-control:not(textarea) {
   height: 48px;
 }
+
 .contact-form .form-control:hover,
 .contact-form .form-control:focus {
   border-color: #3121c2;
 }
+
 .contact-form .submit-btn {
   background: #3121c2;
   border-radius: 50px;
@@ -473,6 +519,7 @@ strong {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+
 .contact-form .submit-btn:hover {
   background: #474559;
 }
@@ -483,6 +530,7 @@ strong {
   position: relative;
   bottom: 8px;
 }
+
 .contact-info p,
 .contact-info a {
   color: #f7f3f3;
@@ -494,6 +542,7 @@ strong {
   display: block;
   margin: 5px 0;
 }
+
 .social-links .uil:hover {
   color: #6554fc;
 }
@@ -504,6 +553,7 @@ strong {
     bottom: 50px;
   }
 }
+
 @media (max-width: 991px) {
   .full-screen {
     padding-bottom: 4rem;
@@ -529,6 +579,7 @@ strong {
     padding: 0 2rem;
   }
 }
+
 @media (max-width: 991px) {
   h1 {
     font-size: 2.4em;
@@ -543,7 +594,8 @@ strong {
   }
 
   .navbar-collapse {
-    background: inherit; /* Pergando o background do elemento 'pai' */
+    background: inherit;
+    /* Pergando o background do elemento 'pai' */
     text-align: center;
     padding-bottom: 20px;
   }
@@ -560,10 +612,12 @@ strong {
     padding: 3.7px 20px;
   }
 }
+
 @media (max-width: 580px) {
   .animated-info {
     min-width: 200px;
   }
+
   .animated-item {
     font-size: 30px;
   }
@@ -586,6 +640,7 @@ strong {
     margin: 10px 0 0 0;
   }
 }
+
 @media (max-width: 320px) {
   .animated-text {
     margin-top: 0;
