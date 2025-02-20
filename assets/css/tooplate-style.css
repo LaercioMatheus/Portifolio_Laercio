@@ -1,4 +1,5 @@
 /*
+////                  Esse é o arquivo que eu posso alterar
 
 Portifólio desenvolvido por Laércio Matheus
 url: github.com/laerciomatheus
@@ -41,6 +42,11 @@ a {
   transition: all 0.4s ease;
 }
 
+.a-copyright-link {
+  color: #5b5b5b;
+  font-weight: bold;
+}
+
 a:hover {
   color: #6554fc !important;
 }
@@ -54,7 +60,7 @@ p {
   font-weight: 300;
   text-align: justify;
   line-height: 1.5;
-  color: #5b5b5b;
+  color: #413e3e;
 }
 
 h1,
@@ -150,6 +156,14 @@ strong {
 
 .animated-item:nth-child(3n + 3) {
   animation-delay: 4s;
+}
+
+.progress {
+  background: #f0f0f0;
+  border-radius: 50px;
+  height: 3rem;
+  margin: 10px 0;
+  overflow: hidden;
 }
 
 @keyframes BottomTotop {
@@ -310,6 +324,11 @@ strong {
   display: block;
 }
 
+.dark-mode .copyright-text {
+  font-size: 16px !important;
+  color: #ffffff;
+}
+
 .color-mode {
   font-weight: bold;
   cursor: pointer;
@@ -357,6 +376,10 @@ strong {
   background: #0d0c15;
   color: #ffffff;
   transition-delay: 0.5s;
+}
+
+.dark-mode .p-light {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .dark-mode .feature-card .uil,
