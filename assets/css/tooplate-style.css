@@ -135,6 +135,7 @@ strong {
 
 .animated-item {
   color: #6554fc;
+  /*#e6bf5f amarelo*/
 }
 
 .animated-item {
@@ -164,7 +165,63 @@ strong {
   height: 3rem;
   margin: 10px 0;
   overflow: hidden;
+  /* Esse parâmetro evita que as bordas sejam cortadas */
 }
+
+.progress-bar {
+  /*background-color: #3f01b396 !important; / Cor para a barra de progress */
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* Mantém o efeito arredondado */
+  animation: Progress-bar-striped-reverse 1s ease-out infinite !important;
+}
+
+.progress-bar-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.progress-bar-number {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@keyframes Progress-bar-striped-reverse {
+  from {
+    background-position: 10px 0px;
+  }
+
+  to {
+    background-position: 40px 0px;
+  }
+}
+
+.type-one {
+  background-color: steelblue;
+}
+
+.type-two {
+  background-color: gray;
+}
+
+.type-three {
+  background-color: slateblue;
+}
+
+.type-four {
+  background-color: burlywood;
+}
+
+.type-five {
+  background-color: #3121c2;
+}
+
 
 @keyframes BottomTotop {
   0% {
