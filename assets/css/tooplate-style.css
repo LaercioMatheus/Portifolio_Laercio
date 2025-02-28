@@ -14,6 +14,56 @@ body {
   transition: 0.5s linear;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.navbar-brand .uil {
+  font-size: 40px;
+}
+
+.navbar-brand:hover {
+  color: #3121c2 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Estilos dos botões do menu de navegação */
+/* .nav-ancle {
+  position: relative;
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: none !important;
+  border: 1.7px solid #2f5de7;
+  background: transparent;
+  color: #474559;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.nav-span {
+  background: #2f5de7a8;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  text-transform: uppercase;
+} */
+
+/* Estilos dos elementos iniciais*/
 .full-screen {
   padding: 2rem 0 4rem;
 }
@@ -27,34 +77,6 @@ body {
   letter-spacing: 0.2px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
-a {
-  font-weight: normal;
-  text-decoration: none !important;
-  transition: all 0.4s ease;
-}
-
-.a-copyright-link {
-  color: #5b5b5b;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #6554fc !important;
-}
-
-.navbar-brand .uil {
-  font-size: 40px;
-}
-
 p {
   font-size: 18px;
   font-weight: 300;
@@ -63,6 +85,7 @@ p {
   color: #413e3e;
 }
 
+/* Estilos dos Títulos*/
 h1,
 h2,
 h3,
@@ -93,6 +116,11 @@ h3,
 b,
 strong {
   font-weight: bold;
+}
+
+.img-fluid {
+  max-width: 80%;
+  border-radius: 160px;
 }
 
 .custom-btn {
@@ -134,8 +162,9 @@ strong {
 }
 
 .animated-item {
-  color: #6554fc;
-  /*#e6bf5f amarelo*/
+  /* color: #6554fc; */
+  color: #2f66e7;
+  /*color: #e6bf5f; /amarelo*/
 }
 
 .animated-item {
@@ -283,43 +312,41 @@ strong {
   padding-bottom: 0;
 }
 
-.navbar-brand {
+.nav-ancle {
+  position: relative;
+  padding: 15px;
+  text-align: center;
+  margin: 10px;
   font-weight: bold;
-}
-
-.navbar-expand-sm .navbar-nav .nav-link {
-  padding: 0 20px;
-}
-
-.nav-link {
-  font-weight: bold;
-  font-size: 16px;
+  text-decoration: none !important;
+  border: 1.7px solid #2f5de7;
+  background: transparent;
+  color: #474559;
+  cursor: pointer;
   overflow: hidden;
 }
 
-.nav-link span {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.3s;
+.nav-ancle:hover .nav-span {
+  width: 100%;
 }
 
-.nav-link span:before {
+.nav-span {
+  background: #2f5de7a8;
+  height: 100%;
+  width: 0;
   position: absolute;
-  top: 100%;
-  content: attr(data-hover);
-  transform: translate3d(0, 0, 0);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+  text-transform: uppercase;
 }
 
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #3121c2;
-  font-weight: bold;
+.navbar-light .navbar-nav .nav-ancle:focus,
+.navbar-light .navbar-nav .nav-ancle:hover {
+  color: #474559;
 }
 
-.navbar-light .navbar-nav .nav-link:focus span,
-.navbar-light .navbar-nav .nav-link:hover span {
-  transform: translateY(-100%);
-}
 
 /*testando as media query*/
 /* Estilos para o menu sanduiche */
@@ -386,6 +413,16 @@ strong {
   color: #ffffff;
 }
 
+.a-copyright-link {
+  color: #5b5b5b;
+  font-weight: bold;
+}
+
+.a-copyright-link:hover {
+  color: #6554fc !important;
+  text-decoration: none;
+}
+
 .color-mode {
   font-weight: bold;
   cursor: pointer;
@@ -395,6 +432,7 @@ strong {
   position: relative;
   right: 6px;
 } */
+
 .color-mode-icon:after {
   font-family: "unicons";
   content: "\ea9f";
@@ -415,11 +453,11 @@ strong {
   transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.dark-mode .navbar-light .navbar-nav .nav-link {
+.dark-mode .navbar-light .navbar-nav .nav-ancle {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.dark-mode .navbar-light .navbar-nav .nav-link:hover {
+.dark-mode .navbar-light .navbar-nav .nav-ancle:hover {
   color: #3121c2;
 }
 
@@ -677,7 +715,7 @@ strong {
     background: inherit;
     /* Pergando o background do elemento 'pai' */
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 
   /* ARRUMANDO A DIV DO MENU TROCANDO DE COR */
@@ -688,7 +726,7 @@ strong {
     }
   } */
 
-  .navbar-expand-sm .navbar-nav .nav-link {
+  .navbar-expand-sm .navbar-nav .nav-ancle {
     padding: 3.7px 20px;
   }
 }
